@@ -35,7 +35,8 @@
                 android:src="@drawable/menu_24"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Menu"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
                 android:padding="10dp"
                 />
 
