@@ -282,6 +282,9 @@ public class MainActivity extends AppCompatActivity {
         if (textClassification != null) {
             textClassification.setVisibility(View.VISIBLE);
         }
+        if (drawerLayoutMain != null) {
+            drawerLayoutMain.closeDrawer(GravityCompat.END);
+        }
 
     }
 
