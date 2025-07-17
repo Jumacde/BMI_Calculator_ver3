@@ -224,4 +224,8 @@
         </ScrollView>
         </FrameLayout>
     </LinearLayout>
+    <include layout="@layout/menu_tab"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -1,9 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:clickable="true"
-    android:focusable="true">
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/JetStream"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/bAboutThisApp"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="about this app"
+                android:textSize="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/Alabaster"
+                android:backgroundTint="@color/DarkSkyBlue"/>
+            <Button
+                android:id="@+id/bAboutBMI"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="what is BMI?"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/Alabaster"
+                android:backgroundTint="@color/DarkSkyBlue"/>
+            <Button
+                android:id="@+id/bAboutNutritionalStatus"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="what is MBI-\nClassification?"
+                android:textSize="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@color/Alabaster"
+                android:backgroundTint="@color/DarkSkyBlue"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 
 </LinearLayout>
