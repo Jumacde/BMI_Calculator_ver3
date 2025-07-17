@@ -35,12 +35,12 @@
 
                 <!-- text about this app-->
                 <LinearLayout
+                    android:id="@+id/textId_thisApp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
                     <TextView
-                        android:id="@+id/textId_thisApp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text=" this app is created for training java and android studio."
@@ -55,12 +55,12 @@
 
                 <!-- text about this bmi-->
                 <LinearLayout
+                    android:id="@+id/textId_bmi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
                     <TextView
-                        android:id="@+id/textId_bmi"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="35dp"
@@ -87,14 +87,14 @@
                         />
                 </LinearLayout>
 
-                <!-- about -->
+                <!-- about MBI-Classification -->
                 <LinearLayout
+                    android:id="@+id/textId_classification"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     >
                     <TextView
-                        android:id="@+id/textId_classification"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="35dp"
