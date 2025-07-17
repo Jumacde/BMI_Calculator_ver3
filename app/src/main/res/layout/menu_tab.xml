@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_page2_background"
+            android:src="@drawable/ic_page3_background"
             android:scaleType="centerCrop"
             android:contentDescription="Main Content Background"
             />
