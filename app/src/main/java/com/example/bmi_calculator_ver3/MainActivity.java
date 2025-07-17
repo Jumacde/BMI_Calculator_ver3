@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private Button submitButton, clearButton;
     private ImageButton imageButton;
     private DrawerLayout drawerLayoutMain, drawerLayoutTab;
-    private LinearLayout textAboutApp, textBMI, textClassification;
+    private LinearLayout textAboutApp, textAboutBMI, textClassification;
 
     private CalcLogic calcLogic;
     private DisplayController displayController;
@@ -73,6 +73,12 @@ public class MainActivity extends AppCompatActivity {
         cursorControl();
         setUpTextWatcher(editTextHeight,"cm");
         setUpTextWatcher(editTextWeight, "kg");
+
+        textAboutApp = findViewById(R.id.textId_thisApp);
+        textAboutBMI = findViewById(R.id.textId_bmi);
+        textClassification = findViewById(R.id.textId_classification);
+        pushTextButton();
+        heideTextButton();
 
     }
 
@@ -264,6 +270,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pushTextButton(int id) {
+
+    }
+
+    private void heideTextButton() {
+        if (textAboutApp != null) {
+            textAboutApp.setVisibility(View.GONE);
+        }
+        if (textAboutBMI != null) {
+            textAboutBMI.setVisibility(View.GONE);
+        }
+        if (textClassification != null) {
+            textClassification.setVisibility(View.GONE);
+        }
 
     }
 
