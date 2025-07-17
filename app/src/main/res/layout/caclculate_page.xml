@@ -23,7 +23,7 @@
             android:id="@+id/toolbarId"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@color/JetStream"
+            android:background="@color/DarkSkyBlue"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"
             >
@@ -48,7 +48,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/app_background1"
+            android:src="@drawable/ic_page1_background"
             android:scaleType="centerCrop"
             android:contentDescription="Main Content Background"
             />
@@ -64,10 +64,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
 
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="0dp"
                 >
 
                 <LinearLayout
@@ -92,7 +92,7 @@
                         android:textSize="30dp"
                         android:padding="10dp"
                         android:layout_margin="10dp"
-                        android:background="@color/BrightGray"
+                        android:background="@color/Champagne"
                         android:hint="0 cm"
                         android:textColor="@color/black"/>
                 </LinearLayout>
@@ -118,7 +118,7 @@
                         android:textSize="30dp"
                         android:padding="10dp"
                         android:layout_margin="10dp"
-                        android:background="@color/BrightGray"
+                        android:background="@color/Champagne"
                         android:hint="0 kg"
                         android:textColor="@color/black"/>
                 </LinearLayout>
