@@ -1,6 +1,139 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_page1_background"
+            android:scaleType="centerCrop"
+            android:contentDescription="Main Content Background"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <!-- text about this app-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textId_thisApp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" this app is created for training java and android studio."
+                        android:textSize="30dp"
+                        android:textColor="@color/YankeesBlue"
+                        android:background="@color/white"
+                        android:layout_marginTop="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        />
+                </LinearLayout>
+
+                <!-- text about this bmi-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textId_bmi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/DarkCyan"
+                        android:text="Body mass index (BMI)"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="27dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text=" BMI, formerly called the Quetelet index, is a measure for indicating nutritional status in adults. \n It is defined as a person’s weight in kilograms divided by the square of the person’s height in metres (kg/m2). \n For example, an adult who weighs 70 kg and whose height is 1.75 m will have a BMI of 22.9."
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_margin="30dp"
+                        android:text="source: https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations"
+                        />
+                </LinearLayout>
+
+                <!-- about -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/textId_classification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35dp"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/DarkCyan"
+                        android:text="MBI-Classification"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="27dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text=" If you have a BMI of 40 or higher, it makes sense to seek medical assistance.
+                            \n If someone has a BMI of 40 kg/m² or higher, they fall under the obesity permagna (class 3 obesity) category.
+                            \n      BMI > 20 | Underweight
+                            \n      BMI 20 - 24.9 | Desirable
+                            \n      BMI 25 - 29.9 | Overweight
+                            \n      BMI 30 - 34.9 | Obese I
+                            \n      BMI 35 – 39.9 | Obese II
+                            \n      BMI Above 40 | Obese III"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:layout_margin="30dp"
+                        android:text="source: https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations
+                            \n https://www.umm.de/en/surgery/obesity-surgery/bmi-obesity-class-1-or-3/class-3-obesity"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
