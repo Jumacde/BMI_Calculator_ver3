@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox checkBox;
     private Button button;
     private ImageButton imageButton;
-    private DrawerLayout drawerLayout;
+    private DrawerLayout drawerLayoutMain, drawerLayoutTab;
     private LinearLayout textAboutApp, textBMI, textClassification;
 
     private CalcLogic calcLogic;
@@ -32,6 +32,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.caclculate_page);
+
+        textViewBMI = findViewById(R.id.bmiText);
+        textViewBMI.setText("0.00");
+        textViewComment = findViewById(R.id.commentText);
+        textViewComment.setText("");
+
+        drawerLayoutMain = findViewById(R.id.main_drawer_layout);
+        drawerLayoutTab = findViewById(R.id.tab_drawer_layout);
+
+        editTextHeight = (EditText) findViewById(R.id.height);
+        editTextWeight = (EditText) findViewById(R.id.weight);
+        editTextHeight.setText("0cm");
+        editTextWeight.setText("0kg");
+
+        checkBox = findViewById(R.id.checkboxId);
 
         calcLogic = new CalcLogic_impl();
         displayController = new DisplayController_impl(calcLogic);
