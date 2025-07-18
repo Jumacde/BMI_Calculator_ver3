@@ -77,12 +77,8 @@ public class MainActivity extends AppCompatActivity {
         textAboutApp = findViewById(R.id.textId_thisApp);
         textAboutBMI = findViewById(R.id.textId_bmi);
         textClassification = findViewById(R.id.textId_classification);
-        pushTextButton(R.id.textId_thisApp);
-        pushTextButton(R.id.textId_bmi);
-        pushTextButton(R.id.textId_classification);
-        pushTextButton(R.id.textId_thisApp);
-        pushTextButton(R.id.textId_bmi);
-        pushTextButton(R.id.textId_classification);
+
+        pushTextButton();
         hideTextButton();
 
     }
@@ -274,8 +270,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void pushTextButton(int id) {
-
+    private void pushTextButton() {
         if (aboutAppButton != null) {
             aboutAppButton.setOnClickListener(v -> {
                 hideTextButton();
