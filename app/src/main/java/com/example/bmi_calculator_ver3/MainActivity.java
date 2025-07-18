@@ -17,6 +17,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,12 +32,13 @@ import com.example.bmi_calculator_ver3.impl.DisplayController_impl;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textViewBMI, textViewComment;
+    private ScrollView scrollView;
     private EditText editTextHeight, editTextWeight;
     private CheckBox checkBox;
     private Button submitButton, clearButton, aboutAppButton, aboutBMIButton, classificationButton;
     private ImageButton imageButton;
     private DrawerLayout drawerLayoutMain, drawerLayoutTab;
-    private LinearLayout textAboutApp, textAboutBMI, textClassification;
+    private LinearLayout textAboutApp, textAboutBMI, textClassification, infoTextContainer;
 
     private CalcLogic calcLogic;
     private DisplayController displayController;
@@ -82,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
         textAboutApp = findViewById(R.id.textId_thisApp);
         textAboutBMI = findViewById(R.id.textId_bmi);
         textClassification = findViewById(R.id.textId_classification);
+
+        infoTextContainer = findViewById(R.id.info_text_container);
 
         pushTextButton();
         hideTextButton();

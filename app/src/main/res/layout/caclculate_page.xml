@@ -223,6 +223,11 @@
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
+            <include layout="@layout/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/info_text_container" />
         </FrameLayout>
     </LinearLayout>
     <include layout="@layout/menu_tab"
