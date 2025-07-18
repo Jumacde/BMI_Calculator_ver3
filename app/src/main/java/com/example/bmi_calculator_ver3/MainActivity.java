@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         infoTextContainer = findViewById(R.id.info_text_container);
 
-        pushTextButton();
+        //pushTextButton();
 
     }
 
@@ -280,7 +280,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-/*    private void pushTextButton() {
+    private void pushTextButton() {
+
+        aboutAppButton = findViewById(R.id.bAboutThisApp);
+        aboutBMIButton = findViewById(R.id.bAboutBMI);
+        classificationButton = findViewById(R.id.bAboutNutritionalStatus);
+
         if (aboutAppButton != null) {
             aboutAppButton.setOnClickListener(v -> {
                 hideTextButton();
@@ -335,7 +340,7 @@ public class MainActivity extends AppCompatActivity {
             textClassification.setVisibility(View.GONE);
         }
 
-    }*/
+    }
 
     @Override
     public void onBackPressed() {
@@ -344,7 +349,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             // 情報テキストが表示されている場合、BMI計算フォームに戻す
             if (infoTextContainer != null && infoTextContainer.getVisibility() == View.VISIBLE) {
-                hideTextButton(); // 全てを非表示
+                //hideTextButton(); // 全てを非表示
                 if (scrollView != null) {
                     scrollView.setVisibility(View.VISIBLE); // BMIフォームを表示
                 }

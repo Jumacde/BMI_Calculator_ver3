@@ -1,14 +1,15 @@
 package com.example.bmi_calculator_ver3.impl;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 
 import com.example.bmi_calculator_ver3.CalcLogic;
 import com.example.bmi_calculator_ver3.DisplayController;
+import com.example.bmi_calculator_ver3.R;
 
 public class DisplayController_impl implements DisplayController {
     private String bmiDisplay;
     private String commentDisplay;
-    private double num;
 
     private final CalcLogic calcLogic;
 
@@ -60,6 +61,11 @@ public class DisplayController_impl implements DisplayController {
     @Override
     public String callFormatNumber(double num) {
         return formatNumber(num);
+    }
+
+    @Override
+    public void callShowButtonText(int text) {
+        showButtonText(text);
     }
 
     private void clearDisplay() {
@@ -175,5 +181,10 @@ public class DisplayController_impl implements DisplayController {
         return String.format("%.2f", num);
     }
 
+    private void showButtonText(int text) {
+
+
+
+    }
 
 }
