@@ -76,6 +76,8 @@ public class MainActivity extends AppCompatActivity {
         setUpTextWatcher(editTextHeight,"cm");
         setUpTextWatcher(editTextWeight, "kg");
 
+        scrollView = findViewById(R.id.mainScroll);
+
         // initialize buttons- and linear layouts id.
         aboutAppButton = findViewById(R.id.bAboutThisApp);
         aboutBMIButton = findViewById(R.id.bAboutBMI);
@@ -318,6 +320,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void hideTextButton() {
+        if (scrollView != null) {
+            scrollView.setVisibility(View.GONE);
+        }
+        if (infoTextContainer != null) {
+            infoTextContainer.setVisibility(View.GONE);
+        }
         if (textAboutApp != null) {
             textAboutApp.setVisibility(View.GONE);
         }
