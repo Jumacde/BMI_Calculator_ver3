@@ -74,6 +74,11 @@ public class MainActivity extends AppCompatActivity {
         setUpTextWatcher(editTextHeight,"cm");
         setUpTextWatcher(editTextWeight, "kg");
 
+        // initialize buttons- and linear layouts id.
+        aboutAppButton = findViewById(R.id.bAboutThisApp);
+        aboutBMIButton = findViewById(R.id.bAboutBMI);
+        classificationButton = findViewById(R.id.bAboutNutritionalStatus);
+
         textAboutApp = findViewById(R.id.textId_thisApp);
         textAboutBMI = findViewById(R.id.textId_bmi);
         textClassification = findViewById(R.id.textId_classification);
