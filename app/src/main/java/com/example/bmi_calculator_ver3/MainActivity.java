@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewBMI, textViewComment;
     private EditText editTextHeight, editTextWeight;
     private CheckBox checkBox;
-    private Button submitButton, clearButton;
+    private Button submitButton, clearButton, aboutAppButton, aboutBMIButton, classificationButton;
     private ImageButton imageButton;
     private DrawerLayout drawerLayoutMain, drawerLayoutTab;
     private LinearLayout textAboutApp, textAboutBMI, textClassification;
@@ -80,7 +80,10 @@ public class MainActivity extends AppCompatActivity {
         pushTextButton(R.id.textId_thisApp);
         pushTextButton(R.id.textId_bmi);
         pushTextButton(R.id.textId_classification);
-        heideTextButton();
+        pushTextButton(R.id.textId_thisApp);
+        pushTextButton(R.id.textId_bmi);
+        pushTextButton(R.id.textId_classification);
+        hideTextButton();
 
     }
 
@@ -272,23 +275,45 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pushTextButton(int id) {
-        heideTextButton();
-        if (textAboutApp != null) {
-            textAboutApp.setVisibility(View.VISIBLE);
-        }
-        if (textAboutBMI != null) {
-            textAboutBMI.setVisibility(View.VISIBLE);
-        }
-        if (textClassification != null) {
-            textClassification.setVisibility(View.VISIBLE);
-        }
-        if (drawerLayoutMain != null) {
-            drawerLayoutMain.closeDrawer(GravityCompat.END);
+
+        if (aboutAppButton != null) {
+            aboutAppButton.setOnClickListener(v -> {
+                hideTextButton();
+                if (textAboutApp != null) {
+                    textAboutApp.setVisibility(View.VISIBLE);
+                }
+                if (drawerLayoutMain != null) {
+                    drawerLayoutMain.closeDrawer(GravityCompat.END);
+                }
+            });
         }
 
+        if (aboutBMIButton != null) {
+            aboutBMIButton.setOnClickListener(v -> {
+                hideTextButton();
+                if (textAboutBMI != null) {
+                    textAboutBMI.setVisibility(View.VISIBLE);
+                }
+                if (drawerLayoutMain != null) {
+                    drawerLayoutMain.closeDrawer(GravityCompat.END);
+                }
+            });
+        }
+
+        if (classificationButton != null) {
+            classificationButton.setOnClickListener(v -> {
+                hideTextButton();
+                if (textClassification != null) {
+                    textClassification.setVisibility(View.VISIBLE);
+                }
+                if (drawerLayoutMain != null) {
+                    drawerLayoutMain.closeDrawer(GravityCompat.END);
+                }
+            });
+        }
     }
 
-    private void heideTextButton() {
+    private void hideTextButton() {
         if (textAboutApp != null) {
             textAboutApp.setVisibility(View.GONE);
         }
