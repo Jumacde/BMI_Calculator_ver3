@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
         infoTextContainer = findViewById(R.id.info_text_container);
 
         pushTextButton();
-        hideTextButton();
 
     }
 
@@ -281,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void pushTextButton() {
+/*    private void pushTextButton() {
         if (aboutAppButton != null) {
             aboutAppButton.setOnClickListener(v -> {
                 hideTextButton();
@@ -336,7 +335,7 @@ public class MainActivity extends AppCompatActivity {
             textClassification.setVisibility(View.GONE);
         }
 
-    }
+    }*/
 
     @Override
     public void onBackPressed() {
