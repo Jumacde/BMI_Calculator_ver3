@@ -6,6 +6,7 @@ import com.example.bmi_calculator_ver3.UIController.TextFont;
 
 public class TextFont_impl implements TextFont {
     private TextView textObese;
+    private TextView textOverWeight;
     private TextFont font;
 
     public TextFont_impl() {
@@ -19,6 +20,11 @@ public class TextFont_impl implements TextFont {
     }
 
     @Override
+    public TextView getTextOverWeight() {
+        return textOverWeight;
+    }
+
+    @Override
     public TextFont getFont() {
         return font;
     }
@@ -26,6 +32,11 @@ public class TextFont_impl implements TextFont {
     @Override
     public void setTextObese(TextView textObese) {
         this.textObese = textObese;
+    }
+
+    @Override
+    public void setTextOverWeight(TextView textOverWeight) {
+        this.textOverWeight = textOverWeight;
     }
 
     @Override
