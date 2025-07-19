@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
         infoTextContainer = findViewById(R.id.info_text_container);
 
-        //pushTextButton();
+        pushTextButton();
 
     }
 
@@ -393,17 +393,13 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (drawerLayoutMain.isDrawerOpen(GravityCompat.END)) {
+        if (drawerLayoutMain != null && drawerLayoutMain.isDrawerOpen(GravityCompat.END)) {
             drawerLayoutMain.closeDrawer(GravityCompat.END);
         } else {
-            // 情報テキストが表示されている場合、BMI計算フォームに戻す
             if (infoTextContainer != null && infoTextContainer.getVisibility() == View.VISIBLE) {
-                //hideTextButton(); // 全てを非表示
-                if (scrollView != null) {
-                    scrollView.setVisibility(View.VISIBLE); // BMIフォームを表示
-                }
+                //
             } else {
-                super.onBackPressed(); // 通常のバックキー処理
+                super.onBackPressed();
             }
         }
     }
