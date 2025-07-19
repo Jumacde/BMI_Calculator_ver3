@@ -288,10 +288,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (aboutAppButton != null) {
             aboutAppButton.setOnClickListener(v -> {
-                hideTextButton();
+                //hideTextButton();
+                /*
                 if (textAboutApp != null) {
                     textAboutApp.setVisibility(View.VISIBLE);
                 }
+                * */
                 if (drawerLayoutMain != null) {
                     drawerLayoutMain.closeDrawer(GravityCompat.END);
                 }
@@ -300,10 +302,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (aboutBMIButton != null) {
             aboutBMIButton.setOnClickListener(v -> {
-                hideTextButton();
+                //hideTextButton();
+                /*
                 if (textAboutBMI != null) {
                     textAboutBMI.setVisibility(View.VISIBLE);
-                }
+                }*/
                 if (drawerLayoutMain != null) {
                     drawerLayoutMain.closeDrawer(GravityCompat.END);
                 }
@@ -312,10 +315,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (classificationButton != null) {
             classificationButton.setOnClickListener(v -> {
-                hideTextButton();
+                //hideTextButton();
+                /*
                 if (textClassification != null) {
                     textClassification.setVisibility(View.VISIBLE);
                 }
+                * */
                 if (drawerLayoutMain != null) {
                     drawerLayoutMain.closeDrawer(GravityCompat.END);
                 }
