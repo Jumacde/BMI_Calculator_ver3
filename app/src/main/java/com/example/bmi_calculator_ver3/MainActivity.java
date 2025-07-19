@@ -280,14 +280,53 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void pushTextButton() {
+    private void showAboutAppText() {
+        if (scrollView != null) {
+            scrollView.setVisibility(View.GONE);
+        }
+        if (infoTextContainer != null) {
+            infoTextContainer.setVisibility(View.VISIBLE);
+        }
+        hideTextButton();
+        if (textAboutApp != null) {
+            textAboutApp.setVisibility(View.VISIBLE);
+        }
+    }
 
+    private void showAboutBMIText() {
+        if (scrollView != null) {
+            scrollView.setVisibility(View.GONE);
+        }
+        if (infoTextContainer != null) {
+            infoTextContainer.setVisibility(View.VISIBLE);
+        }
+        hideTextButton();
+        if (textAboutBMI != null) {
+            textAboutBMI.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void showClassificationText() {
+        if (scrollView != null) {
+            scrollView.setVisibility(View.GONE);
+        }
+        if (infoTextContainer != null) {
+            infoTextContainer.setVisibility(View.VISIBLE);
+        }
+        hideTextButton();
+        if (textClassification != null) {
+            textClassification.setVisibility(View.VISIBLE);
+        }
+    }
+
+    private void pushTextButton() {
         aboutAppButton = findViewById(R.id.bAboutThisApp);
         aboutBMIButton = findViewById(R.id.bAboutBMI);
         classificationButton = findViewById(R.id.bAboutNutritionalStatus);
 
         if (aboutAppButton != null) {
             aboutAppButton.setOnClickListener(v -> {
+                showAboutAppText();
                 //hideTextButton();
                 /*
                 if (textAboutApp != null) {
@@ -302,6 +341,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (aboutBMIButton != null) {
             aboutBMIButton.setOnClickListener(v -> {
+                showAboutBMIText();
                 //hideTextButton();
                 /*
                 if (textAboutBMI != null) {
@@ -315,6 +355,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (classificationButton != null) {
             classificationButton.setOnClickListener(v -> {
+                showClassificationText();
                 //hideTextButton();
                 /*
                 if (textClassification != null) {
@@ -348,6 +389,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
     @Override
     public void onBackPressed() {
