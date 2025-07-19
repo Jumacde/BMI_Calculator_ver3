@@ -14,13 +14,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_page1_background"
-            android:scaleType="centerCrop"
-            android:contentDescription="Main Content Background"
-            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_page3_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="Main Content Background"
+                />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -43,7 +43,8 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text=" this app is created for training java and android studio."
+                        android:text=" this app is created for training java and android studio.
+                        \n you can calculate the BMI and you get the goal Weight."
                         android:textSize="30dp"
                         android:textColor="@color/YankeesBlue"
                         android:background="@color/white"
@@ -68,6 +69,7 @@
                         android:gravity="center"
                         android:textColor="@color/DarkCyan"
                         android:text="Body mass index (BMI)"
+                        android:background="@color/white"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -76,14 +78,18 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
+                        android:textColor="@color/YankeesBlue"
                         android:text=" BMI, formerly called the Quetelet index, is a measure for indicating nutritional status in adults. \n It is defined as a person’s weight in kilograms divided by the square of the person’s height in metres (kg/m2). \n For example, an adult who weighs 70 kg and whose height is 1.75 m will have a BMI of 22.9."
+                        android:background="@color/white"
                         />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_margin="30dp"
+                        android:textColor="@color/YankeesBlue"
                         android:text="source: https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations"
+                        android:background="@color/white"
                         />
                 </LinearLayout>
 
@@ -101,6 +107,7 @@
                         android:layout_margin="20dp"
                         android:gravity="center"
                         android:textColor="@color/DarkCyan"
+                        android:background="@color/white"
                         android:text="MBI-Classification"
                         />
                     <TextView
@@ -118,7 +125,8 @@
                             \n      BMI 30 - 34.9 | Obese I
                             \n      BMI 35 – 39.9 | Obese II
                             \n      BMI Above 40 | Obese III"
-
+                        android:background="@color/white"
+                        android:textColor="@color/YankeesBlue"
                         />
                     <TextView
                         android:layout_width="match_parent"
@@ -127,6 +135,8 @@
                         android:layout_margin="30dp"
                         android:text="source: https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations
                             \n https://www.umm.de/en/surgery/obesity-surgery/bmi-obesity-class-1-or-3/class-3-obesity"
+                        android:background="@color/white"
+                        android:textColor="@color/YankeesBlue"
                         />
 
                 </LinearLayout>
