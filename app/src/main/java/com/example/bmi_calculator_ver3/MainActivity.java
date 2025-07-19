@@ -438,6 +438,10 @@ public class MainActivity extends AppCompatActivity {
         SpannableStringBuilder ssbObeseII = new SpannableStringBuilder(textObeseII);
         SpannableStringBuilder ssbObeseIII = new SpannableStringBuilder(textObeseIII);
 
+        // set colort
+        int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
+        int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
+        int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
     }
 
 }
