@@ -90,6 +90,7 @@
                         android:textColor="@color/YankeesBlue"
                         android:text="source: https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations"
                         android:background="@color/white"
+                        android:autoLink="web"
                         />
                 </LinearLayout>
 
@@ -137,6 +138,7 @@
                             \n https://www.umm.de/en/surgery/obesity-surgery/bmi-obesity-class-1-or-3/class-3-obesity"
                         android:background="@color/white"
                         android:textColor="@color/YankeesBlue"
+                        android:autoLink="web"
                         />
 
                 </LinearLayout>
