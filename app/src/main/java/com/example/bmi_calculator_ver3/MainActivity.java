@@ -390,6 +390,24 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void backFromTextPage() {
+        if (scrollView != null) {
+            scrollView.setVisibility(View.VISIBLE);
+        }
+        if (infoTextContainer != null) {
+            infoTextContainer.setVisibility(View.GONE);
+        }
+        if (textAboutApp != null) {
+            textAboutApp.setVisibility(View.GONE);
+        }
+        if (textAboutBMI != null) {
+            textAboutBMI.setVisibility(View.GONE);
+        }
+        if (textClassification != null) {
+            textClassification.setVisibility(View.GONE);
+        }
+    }
+
 
     @Override
     public void onBackPressed() {
@@ -398,6 +416,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             if (infoTextContainer != null && infoTextContainer.getVisibility() == View.VISIBLE) {
                 //
+                backFromTextPage();
             } else {
                 super.onBackPressed();
             }
