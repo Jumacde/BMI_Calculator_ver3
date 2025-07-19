@@ -5,14 +5,23 @@ import android.widget.TextView;
 import com.example.bmi_calculator_ver3.UIController.TextFont;
 
 public class TextFont_impl implements TextFont {
-    private TextView textObese;
-    private TextView textOverWeight;
+    private TextView textUnderWeight, textDesirable, textObese, textOverWeight;
     private TextFont font;
 
     public TextFont_impl() {
 
     }
 
+
+    @Override
+    public TextView getTextUnderWeight() {
+        return textUnderWeight;
+    }
+
+    @Override
+    public TextView getTextDesirable() {
+        return textDesirable;
+    }
 
     @Override
     public TextView getTextObese() {
@@ -27,6 +36,16 @@ public class TextFont_impl implements TextFont {
     @Override
     public TextFont getFont() {
         return font;
+    }
+
+    @Override
+    public void setTextUnderWeight(TextView textUnderWeight) {
+        this.textUnderWeight = textUnderWeight;
+    }
+
+    @Override
+    public void setTextDesirable(TextView textDesirable) {
+        this.textDesirable = textDesirable;
     }
 
     @Override
