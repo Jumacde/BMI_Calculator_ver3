@@ -45,9 +45,10 @@
                         android:layout_height="wrap_content"
                         android:text="\n this app is created for training java and android studio.
                                 \n
-                                \n you can calculate the BMI and you get the goal Weight.
+                                \n you can calculate the BMI and you know the goal Weight.
                                 \n"
                         android:textSize="30dp"
+                        android:padding="20dp"
                         android:textColor="@color/YankeesBlue"
                         android:background="@color/white"
                         android:layout_marginTop="20dp"
@@ -71,6 +72,7 @@
                         android:gravity="center"
                         android:textColor="@color/DarkCyan"
                         android:text="Body mass index (BMI)"
+                        android:padding="5dp"
                         android:background="@color/white"
                         />
                     <TextView
@@ -81,6 +83,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:textColor="@color/YankeesBlue"
+                        android:padding="20dp"
                         android:text=" \n BMI, formerly called the Quetelet index, is a measure for indicating nutritional status in adults.
                                 \n It is defined as a person’s weight in kilograms divided by the square of the person’s height in metres (kg/m2).
                                 \n
@@ -94,6 +97,7 @@
                         android:textSize="20dp"
                         android:layout_margin="30dp"
                         android:textColor="@color/YankeesBlue"
+                        android:padding="10dp"
                         android:text="source:
                                 \n https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations
                                 \n"
@@ -126,16 +130,17 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
+                        android:padding="20dp"
                         android:text="
                             \n If you have a BMI of 40 or higher, it makes sense to seek medical assistance.
                             \n If someone has a BMI of 40 kg/m² or higher, they fall under the obesity permagna (class 3 obesity) category.
                             \n
-                            \n      BMI > 20 | Underweight
-                            \n      BMI 20 - 24.9 | Desirable
-                            \n      BMI 25 - 29.9 | Overweight
-                            \n      BMI 30 - 34.9 | Obese I
-                            \n      BMI 35 – 39.9 | Obese II
-                            \n      BMI Above 40 | Obese III
+                            \n BMI > 20 | Underweight
+                            \n BMI 20 - 24.9 | Desirable
+                            \n BMI 25 - 29.9 | Overweight
+                            \n BMI 30 - 34.9 | Obese I
+                            \n BMI 35 – 39.9 | Obese II
+                            \n BMI Above 40 | Obese III
                             \n"
 
                         android:background="@color/white"
@@ -146,6 +151,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20dp"
                         android:layout_margin="30dp"
+                        android:padding="10dp"
                         android:text="source:
                             \n https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations
                             \n
