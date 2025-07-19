@@ -424,6 +424,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeFont() {
+        String textUnderWeight = "Underweight";
+        String textDesirable = "Desirable";
+        String textOverWeight = "OverWeight";
+        String textObeseI = "ObeseI";
+        String textObeseII = "ObeseII";
+        String textObeseIII = "ObeseIII";
+
+        SpannableStringBuilder ssbUnderweight = new SpannableStringBuilder(textUnderWeight);
+        SpannableStringBuilder ssbDesirable = new SpannableStringBuilder(textDesirable);
+        SpannableStringBuilder ssbOverWeight = new SpannableStringBuilder(textOverWeight);
+        SpannableStringBuilder ssbObeseI = new SpannableStringBuilder(textObeseI);
+        SpannableStringBuilder ssbObeseII = new SpannableStringBuilder(textObeseII);
+        SpannableStringBuilder ssbObeseIII = new SpannableStringBuilder(textObeseIII);
 
     }
 
