@@ -63,11 +63,6 @@ public class DisplayController_impl implements DisplayController {
         return formatNumber(num);
     }
 
-    @Override
-    public void callShowButtonText(int text) {
-        showButtonText(text);
-    }
-
     private void clearDisplay() {
         this.calcLogic.setHeight("");
         this.calcLogic.setCalcHeight(0);
@@ -179,12 +174,6 @@ public class DisplayController_impl implements DisplayController {
     private String formatNumber(double num) {
         //display up to two decimal places
         return String.format("%.2f", num);
-    }
-
-    private void showButtonText(int text) {
-
-
-
     }
 
 }
