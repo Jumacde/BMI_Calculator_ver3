@@ -324,12 +324,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void hideTextButton() {
-        if (scrollView != null) {
+        /*
+        * if (scrollView != null) {
             scrollView.setVisibility(View.GONE);
         }
         if (infoTextContainer != null) {
             infoTextContainer.setVisibility(View.GONE);
         }
+        * */
         if (textAboutApp != null) {
             textAboutApp.setVisibility(View.GONE);
         }
