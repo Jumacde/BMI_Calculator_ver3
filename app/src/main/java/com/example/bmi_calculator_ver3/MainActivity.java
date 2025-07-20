@@ -434,7 +434,19 @@ public class MainActivity extends AppCompatActivity {
         int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
         int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
 
-        String word = "";
+        String word_UnderWeight = "Underweight";
+        String word_Desirable = "Desirable";
+        String word_OverWeight = "Overweight";
+        String word_ObeseI = "Obese I";
+        String word_ObeseII = "ObeseII";
+        String word_ObeseIII = "ObeseIII";
+
+        int index_UnderWeight = fullTextClassification.indexOf(word_UnderWeight);
+        int index_Desirable = fullTextClassification.indexOf(word_Desirable);
+        int index_OverWeight = fullTextClassification.indexOf(word_OverWeight);
+        int index_ObeseI = fullTextClassification.indexOf(word_ObeseI);
+        int index_ObeseII = fullTextClassification.indexOf(word_ObeseII);
+        int index_ObeseIII = fullTextClassification.indexOf(word_ObeseIII);
 
     }
 
