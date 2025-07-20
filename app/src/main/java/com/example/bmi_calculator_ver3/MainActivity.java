@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         infoTextContainer = findViewById(R.id.info_text_container);
 
         pushTextButton();
-        changeFont();
+        changeTextColor();
 
     }
 
@@ -429,11 +429,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // change text color
-    private void changeFont() {
+    private void changeTextColor() {
         String fullTextClassification = mainTextBmiClassification.getText().toString();
         SpannableStringBuilder ssbClassification = new SpannableStringBuilder(fullTextClassification);
 
-        // set colort
+        // set color
         int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
         int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
         int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
