@@ -31,7 +31,7 @@ import com.example.bmi_calculator_ver3.impl.CalcLogic_impl;
 import com.example.bmi_calculator_ver3.impl.DisplayController_impl;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView textViewBMI, textViewComment;
+    private TextView textViewBMI, textViewComment, mainTextBmiClassification ;
     private ScrollView scrollView;
     private EditText editTextHeight, editTextWeight;
     private CheckBox checkBox;
@@ -86,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
         textAboutApp = findViewById(R.id.textId_thisApp);
         textAboutBMI = findViewById(R.id.textId_bmi);
         textClassification = findViewById(R.id.textId_classification);
+
+        mainTextBmiClassification = findViewById(R.id.id_mainTextClassification);
 
         infoTextContainer = findViewById(R.id.info_text_container);
 
@@ -424,24 +426,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void changeFont() {
-        String textUnderWeight = "Underweight";
-        String textDesirable = "Desirable";
-        String textOverWeight = "OverWeight";
-        String textObeseI = "ObeseI";
-        String textObeseII = "ObeseII";
-        String textObeseIII = "ObeseIII";
-
-        SpannableStringBuilder ssbUnderweight = new SpannableStringBuilder(textUnderWeight);
-        SpannableStringBuilder ssbDesirable = new SpannableStringBuilder(textDesirable);
-        SpannableStringBuilder ssbOverWeight = new SpannableStringBuilder(textOverWeight);
-        SpannableStringBuilder ssbObeseI = new SpannableStringBuilder(textObeseI);
-        SpannableStringBuilder ssbObeseII = new SpannableStringBuilder(textObeseII);
-        SpannableStringBuilder ssbObeseIII = new SpannableStringBuilder(textObeseIII);
+        String fullTextClassification = mainTextBmiClassification.getText().toString();
+        SpannableStringBuilder ssbClassification = new SpannableStringBuilder(fullTextClassification);
 
         // set colort
         int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
         int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
         int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
+
+        String word = "";
+
     }
 
 }

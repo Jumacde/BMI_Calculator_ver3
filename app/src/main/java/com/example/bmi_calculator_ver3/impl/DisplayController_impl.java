@@ -114,15 +114,15 @@ public class DisplayController_impl implements DisplayController {
             if (bmi < 18.5) {
                 comment = "underweight.";
             } else if (bmi >= 18.5 && bmi < 25) {
-                comment = "normal weight.";
+                comment = "Desirable(normal weight).";
             } else if (bmi >= 25 && bmi < 30) {
-                comment = "pre-obesity.";
+                comment = "Overweight.";
             } else if (bmi >= 30 && bmi < 34.9){
-                comment = "obesity class I";
+                comment = "obese I";
             } else if (bmi >= 35 && bmi < 39.9) {
-                comment = "obesity class II";
+                comment = "obese II";
             } else {
-                comment = "obesity class III";
+                comment = "obese III";
             }
         }
         return comment;
