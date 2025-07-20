@@ -30,6 +30,9 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.example.bmi_calculator_ver3.impl.CalcLogic_impl;
 import com.example.bmi_calculator_ver3.impl.DisplayController_impl;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
     private TextView textViewBMI, textViewComment, mainTextBmiClassification ;
     private ScrollView scrollView;
@@ -88,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
         textClassification = findViewById(R.id.textId_classification);
 
         mainTextBmiClassification = findViewById(R.id.id_mainTextClassification);
-
         infoTextContainer = findViewById(R.id.info_text_container);
 
         pushTextButton();
+        changeFont();
 
     }
 
@@ -425,29 +428,37 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // change text color
     private void changeFont() {
         String fullTextClassification = mainTextBmiClassification.getText().toString();
         SpannableStringBuilder ssbClassification = new SpannableStringBuilder(fullTextClassification);
-
-        String word_UnderWeight = "Underweight";
-        String word_Desirable = "Desirable";
-        String word_OverWeight = "Overweight";
-        String word_ObeseI = "Obese I";
-        String word_ObeseII = "ObeseII";
-        String word_ObeseIII = "ObeseIII";
-
-        int index_UnderWeight = fullTextClassification.indexOf(word_UnderWeight);
-        int index_Desirable = fullTextClassification.indexOf(word_Desirable);
-        int index_OverWeight = fullTextClassification.indexOf(word_OverWeight);
-        int index_ObeseI = fullTextClassification.indexOf(word_ObeseI);
-        int index_ObeseII = fullTextClassification.indexOf(word_ObeseII);
-        int index_ObeseIII = fullTextClassification.indexOf(word_ObeseIII);
 
         // set colort
         int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
         int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
         int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
 
+        Map<String, Integer> colorMap = new LinkedHashMap<>();
+        colorMap.put("Underweight", colorOrange);
+        colorMap.put("Desirable", colorBlue);
+        colorMap.put("Overweight", colorOrange);
+        colorMap.put("Obese I", colorRed);
+        colorMap.put("Obese II", colorRed);
+        colorMap.put("Obese III", colorRed);
+
+        for (Map.Entry<String, Integer> entry: colorMap.entrySet()) {
+            String text = entry.getKey();
+            int color = entry.getValue();
+
+            int startIndex = fullTextClassification.indexOf(text);
+
+            if (startIndex != -1) {
+                int endIndex = startIndex + text.length();
+                ssbClassification.setSpan(new ForegroundColorSpan(color),
+                        startIndex, endIndex, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+            }
+        }
+        mainTextBmiClassification.setText(ssbClassification);
     }
 
 }
