@@ -429,11 +429,6 @@ public class MainActivity extends AppCompatActivity {
         String fullTextClassification = mainTextBmiClassification.getText().toString();
         SpannableStringBuilder ssbClassification = new SpannableStringBuilder(fullTextClassification);
 
-        // set colort
-        int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
-        int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
-        int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
-
         String word_UnderWeight = "Underweight";
         String word_Desirable = "Desirable";
         String word_OverWeight = "Overweight";
@@ -447,6 +442,11 @@ public class MainActivity extends AppCompatActivity {
         int index_ObeseI = fullTextClassification.indexOf(word_ObeseI);
         int index_ObeseII = fullTextClassification.indexOf(word_ObeseII);
         int index_ObeseIII = fullTextClassification.indexOf(word_ObeseIII);
+
+        // set colort
+        int colorBlue = ContextCompat.getColor(this, android.R.color.holo_blue_dark);
+        int colorOrange = ContextCompat.getColor(this, android.R.color.holo_orange_light);
+        int colorRed = ContextCompat.getColor(this, android.R.color.holo_red_dark);
 
     }
 
